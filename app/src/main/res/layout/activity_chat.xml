@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:listitem="@layout/message_recived_layout"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editText_message"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:inputType="textLongMessage|textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:background="@drawable/message_box"
+            android:minHeight="40dp" android:maxHeight="70dp" android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_send" android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:id="@+id/button_send"
+            android:background="@drawable/button_round"
+            android:gravity="center_horizontal|top"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:drawableTop="@drawable/ic_send_black_24dp" android:paddingTop="8dp" android:paddingStart="2dp"
+            android:layout_marginBottom="4dp" android:layout_marginEnd="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
