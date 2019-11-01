@@ -14,11 +14,15 @@
 
     <TextView
             android:id="@+id/textview_message"
-            android:layout_width="280dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="this is a message send by someone!"
-            android:paddingStart="16dp" android:background="@drawable/rounded_rectangle_gray" android:paddingTop="8dp"
-            android:paddingBottom="8dp" android:paddingEnd="16dp" android:fontFamily="@font/manrope_regular"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_rectangle_gray"
+            android:fontFamily="@font/manrope_regular"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="this is a message send by someone!" />
 
 </LinearLayout>
